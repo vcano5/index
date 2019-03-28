@@ -37,10 +37,28 @@
 <div class="container">
 <h1> Acerca de mi </h1>
 <br>
-<p> Me gustan los corridos del Komander xd </p>
+<p> Me gustan las canciones de El Komander </p>
 
 <br>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-t_oqStDXU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div id="bottom"> </div>
+
+<script type="text/javascript">
+  var items = ['-t_oqStDXU8', 'ts2OIJgLd34', 'K5dZlwUutig', '7W5vlVW_UdQ', '2LnCMijVTI0']
+var iframe = document.createElement('iframe');
+var v = items[Math.floor(Math.random() * items.length)]
+  iframe.src = 'https://www.youtube-nocookie.com/embed/' + v;
+  console.log()
+  //iframe.src = 'http://www.youtube-nocookie.com/embed/9kd-PoHWah8';
+  iframe.width = '560';
+  iframe.height = '315';
+
+  var bottom = document.getElementById('bottom');
+  bottom.appendChild(iframe);
+ /*<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-t_oqStDXU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>*/
+
+</script>
+
 
 </div>
 
