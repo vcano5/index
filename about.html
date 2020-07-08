@@ -1,36 +1,59 @@
 <!-- views/pages/about.ejs -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<title>VCANO5.COM - Acerca de mi</title>
-	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>VCANO5.COM - Acerca de mí</title>
+  <style type="text/css">
+    .arroba {
+       &:before {
+        content: "@";
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="/"><img src="https://i.imgur.com/THUM0o9.png" height="32" width="32"></a>
+<body><nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="/"><span class="display-4 text-white" style="font-size: 2rem">vcano5</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
+      <li class="nav-item py-2">
+      
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="/">Inicio </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Iniciar sesion</a>
+        <a class="nav-link disabled" href="https://nahuatl.vcano5.com/login?sitio=www">Iniciar sesion</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Registrarme</a>
+        <a class="nav-link" href="https://diccionarionahuatl.herokuapp.com/registro?sitio=www">Registrarme</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="/about">Acerca de mi <span class="sr-only">(current)</span></a>
       </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <li class="nav-item">
+        <hr class="border-top">
+      </li>
+      <li class="nav-item">
+        <a href="https://lpp.vcano5.com" target="_self" class="nav-link"><i class="fa fa-globe"></i> Las Puertas de la Pedagogía</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://nahuatl.vcano5.com" target="_self" class="nav-link"><i class="fa fa-globe"></i> Diccionario Náhuatl</a>
+      </li>
+      <li class="nav-item"> <a class="nav-link" href="https://dioses.vcano5.com/" target="_self"><i class="fa fa-globe" aria-hidden="true"></i> Dioses Griegos</a></li>
+      </ul>
   </div>
 </nav>
 <br><br>
@@ -44,7 +67,7 @@
 <div id="bottom"> </div>
 
 <script type="text/javascript">
-  var items = ['-t_oqStDXU8', 'ts2OIJgLd34', 'K5dZlwUutig', '7W5vlVW_UdQ', '2LnCMijVTI0']
+  var items = ['-t_oqStDXU8', 'ts2OIJgLd34', 'K5dZlwUutig', '7W5vlVW_UdQ', '2LnCMijVTI0', '1u0gLL6Fa78']
 var iframe = document.createElement('iframe');
 var v = items[Math.floor(Math.random() * items.length)]
   iframe.src = 'https://www.youtube-nocookie.com/embed/' + v;
@@ -58,6 +81,8 @@ var v = items[Math.floor(Math.random() * items.length)]
  /*<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-t_oqStDXU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>*/
 
 </script>
+
+<span>Contacto: <a href="mailto:yo@vcano5.com">yo@vcano5.com</a></span>
 
 
 </div>
